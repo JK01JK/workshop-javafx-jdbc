@@ -10,4 +10,16 @@ public class Utils {
 		return (Stage) ((Node) event.getSource()).getScene().getWindow();
 	} //somente um método para pegar o stage atual
 	
+	
+	public static Integer tryParseToInt(String str) {
+		
+		try {
+			return Integer.parseInt(str);
+		} 
+		catch(NumberFormatException e) {
+			return null;
+		}
+	
+	}
+	
 }
